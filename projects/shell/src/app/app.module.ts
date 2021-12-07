@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { APP_ROUTES } from './app.routes';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AppStoreModule } from './app-store/app-store.module';
 
 @NgModule({
   imports: [
     BrowserModule,
-    RouterModule.forRoot(APP_ROUTES)
+    RouterModule.forRoot(APP_ROUTES),
+    AppStoreModule
   ],
   declarations: [
     AppComponent,

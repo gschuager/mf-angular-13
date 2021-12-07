@@ -7,5 +7,8 @@ import { loadRemoteEntry } from '@angular-architects/module-federation';
 // loadRemoteEntry('http://localhost:3000/remoteEntry.js', 'mfe1')
 
 // New version for loading modules
-loadRemoteEntry({ type: 'module', remoteEntry: 'http://localhost:3000/remoteEntry.js'})
-	.then(_ => import('./bootstrap').catch(err => console.error(err)))
+// loadRemoteEntry({ type: 'module', remoteEntry: 'http://localhost:3000/remoteEntry.js'})
+// 	.then(_ => import('./bootstrap').catch(err => console.error(err)))
+
+
+import('./bootstrap').catch(err => console.error(err));
