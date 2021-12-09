@@ -56,7 +56,7 @@
 							"outputHashing": "all",
 							"extraWebpackConfig": "projects/shell/webpack.prod.config.js",
               "sourceMap": true,
-              "namedChunks": true
+							"namedChunks": true
 						},
 						"development": {
 							"buildOptimizer": false,

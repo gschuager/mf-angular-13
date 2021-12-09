@@ -3,19 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run start:shell",
-    "start:shell": "ng serve shell  -o --port 5000",
-    "start:mfe1": "ng serve mfe1 -o --port 3000",
-    "start:all": "concurrently \"npm run start:shell\" \"npm run start:mfe1\" ",
-    "build:shell": "ng build shell --prod",
-    "build:mfe1": "ng build mfe1 --prod",
-    "serve:dist": "concurrently \"serve dist/shell -l 5000 -s\" \"serve dist/mfe1 -l 3000 -s\" ",
-    "build": "npm run build:shell && npm run build:mfe1",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "preinstall": "npx npm-force-resolutions",
-    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
+    "start": "ng serve shell --configuration=production"
   },
   "resolutions": {
     "webpack": "5.64.4"
@@ -57,6 +45,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ngx-build-plus": "^13.0.1",
     "npm-force-resolutions": "0.0.10",
     "protractor": "~7.0.0",
     "serve": "^11.3.2",
